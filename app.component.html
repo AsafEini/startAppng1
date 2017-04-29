@@ -1,0 +1,9 @@
+<div class="main-app" oncontextmenu="return false;">
+    <browser class="place-browser" ng-click="$ctrl.fileSystem.closeContextMenu()"></browser>
+    <content class="place-content" ng-click="$ctrl.fileSystem.closeContextMenu()" fs="$ctrl.fileSystem"
+    ></content>
+    <div class="context-menu-pos"
+         ng-style="{'top':$ctrl.fileSystem.getPosY(), 'left':$ctrl.fileSystem.getPosX()}">
+        <context-menu ng-if="$ctrl.fileSystem.isContextMenu"></context-menu>
+    </div>
+</div>

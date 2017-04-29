@@ -1,0 +1,4 @@
+<div class="content-container">
+    <span class="content-Item" ng-repeat="child in $ctrl.clickedFolder.children"
+          ng-mousedown = "$ctrl.handleClick($event, child.id)">{{child.name}}</span>
+</div>

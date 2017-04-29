@@ -1,0 +1,16 @@
+.context-menu-row{
+    background-color: aliceblue;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+}
+
+.context-menu-row:first-child{
+    border-top: 1px solid black;
+}
+
+.context-menu-row:hover{
+    background-color: beige;
+}

@@ -1,0 +1,12 @@
+<ul>
+    <li  ng-repeat="child in $ctrl.group.children"
+        ng-click="$ctrl.toggle(child, $event)"
+        ng-if="child.children">
+        <span  ng-click="$ctrl.select(child)"
+               ng-mousedown = "$ctrl.handleClick($event, child.id)">{{child.name}}</span>
+
+        <tree  group="child"
+              ng-show="child.expanded" fs="$ctrl.fs"></tree>
+
+    </li>
+</ul>
